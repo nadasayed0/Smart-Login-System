@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="images/user-login-icon-26.jpg">
+
+    <!--& google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+
+    <!--& font awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!--& bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--& login css-->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+
+<body>
+    <section>
+      <div class="position-relative start-50 top-50 translate-middle rounded-2 shadow h-75 w-75 overflow-hidden">
+        
+        <!--& left section part-->
+        <div class="sectionOne position-absolute start-0 top-0 w-50 h-100 text-white">
+          <div class="content w-100 d-flex justify-content-center align-items-center flex-column text-center h-100  text-capitalize">
+            <span>Welcome To</span>
+            <div class="image my-3">
+              <img src="images/unnamed.png" class="w-25 rounded-circle" alt="">
+            </div>
+            <h1 class="h3 mb-3">our smart login system</h1>
+            <p class="mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quos voluptate? Quaerat molestiae ipsam necessitatibus.
+            </p>
+          </div>
+        </div>
+
+
+        <!--& right section part-->
+        <div class="sectionTwo position-absolute end-0 top-0 w-50 h-100 bg-white">
+          <div class="contentTwo w-100 d-flex justify-content-center align-items-center flex-column text-center h-100  text-capitalize">
+            <h2>login to your account</h2>
+
+            <div class="inputs w-100">
+              <div class="form-floating mb-3 w-75 m-auto border-bottom border-1 border-black inputDiv">
+                <input id="email" type="email" class="form-control border-0 bg-transparent shadow-none" placeholder="" autocomplete="off">
+                <label for="email">enter your email</label>
+              </div>
+
+              <div class="form-floating mb-3  w-75 m-auto border-bottom border-1 border-black inputDiv passInput">
+                <input id="password" type="password" class="form-control border-0 bg-transparent shadow-none" placeholder="" autocomplete="off">
+                <label for="password">enter your password</label>
+                <i class="fa-regular fa-eye showPassIcon"></i>
+              </div>
+
+              <p class="alert alert-danger w-75 m-auto mb-3 d-none alertParag">
+
+              </p>
+
+              <div class="form-check">
+                <input type="radio" name="radioBtn" id="radioBtn">
+                <label for="radioBtn">
+                  forget password
+                </label>
+              </div>
+
+              <button class="btn changeBtn d-none">change Password</button>
+              
+              <button class="btn loginBtn w-75">login</button>
+
+              <p class="mt-3">
+                don't have an account? 
+                <a href="#" class="signUpAnchor">
+                  sign up
+                </a>
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!--& inner box (rules for email & pass)-->
+      <div id="out-inner-box" class="out-inner-box position-absolute start-0 end-0 top-0 bottom-0 bg-black bg-gradient bg-opacity-50 d-none">
+        <div class="inner-box position-absolute start-50 top-50 translate-middle bg-white p-4 rounded-2">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="circles">
+                    <span class="rounded-circle me-2"></span>
+                    <span class="rounded-circle me-2"></span>
+                    <span class="rounded-circle me-2"></span>
+                </div>
+        
+                <button class="btn border-0" id="closeBtn">
+                    <i class="fa-solid fa-xmark close fs-3"></i>
+                </button>
+            </div>
+    
+              <p class="fw-bold">
+                The email should be in a valid format.
+              </p>
+
+              <ul class="rules">
+                <li>
+                  Email must Use only letters (a-z, A-Z), numbers (0-9), and special characters like (.), (_), (%), (+), (-).
+                </li>
+                <li>
+                  Example: username@example.com
+                </li>
+              </ul>
+
+              <p class="fw-bold">
+                The Password should be in a valid format.
+              </p>
+
+              <ul class="rules">
+                <li>
+                  At least 8 characters long.
+                </li>
+
+                <li>
+                  Must include at least one uppercase letter (A-Z), one lowercase letter (a-z), one number (0-9), and one special character (e.g., @, $, !, %, *, ?, &).
+                </li>
+
+                <li>
+                  Example: Email: user@example.com Password: ExamplePass123!
+                </li>
+              </ul>
+        </div>
+    </div>
+
+
+    <!--& background -->
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </section>
+
+    <!--& bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--& login js -->
+    <script src="js/login.js"></script>
+</body>
+</html>
